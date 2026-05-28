@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+
   <main class="page-shell">
     <section class="hero card">
       <img class="logo" src="assets/logo.svg" alt="BloomVault Farms logo" />
@@ -19,6 +22,7 @@
       <input type="hidden" name="_subject" value="New BloomVault Tester Application" />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="true" />
+      <input type="text" name="_honey" style="display:none">
 
       <div class="field-grid">
         <label>
@@ -95,30 +99,62 @@
       <fieldset>
         <legend>Tester Commitment</legend>
 
-        <label class="check">
-          <input type="checkbox" name="21+ Confirmation" value="Confirmed 21+" required />
-          <span>I confirm that I am 21 years of age or older.</span>
-        </label>
+        <div class="commitment-grid">
+          <label class="check-card">
+            <div>
+              <strong>21+ Confirmation</strong>
+              <span>I confirm that I am 21 years of age or older.</span>
+            </div>
+            <div class="yes-box">
+              <span>YES</span>
+              <input type="checkbox" name="21+ Confirmation" value="Confirmed 21+" required />
+            </div>
+          </label>
 
-        <label class="check">
-          <input type="checkbox" name="Will document weekly" value="Yes" required />
-          <span>Will you document your grow with weekly updates?</span>
-        </label>
+          <label class="check-card">
+            <div>
+              <strong>Weekly Documentation</strong>
+              <span>Will you document your grow with weekly updates?</span>
+            </div>
+            <div class="yes-box">
+              <span>YES</span>
+              <input type="checkbox" name="Will document weekly" value="Yes" required />
+            </div>
+          </label>
 
-        <label class="check">
-          <input type="checkbox" name="Will post in Discord" value="Yes" required />
-          <span>Will you post updates inside the BloomVault Discord?</span>
-        </label>
+          <label class="check-card">
+            <div>
+              <strong>Discord Activity</strong>
+              <span>Will you post updates inside the BloomVault Discord?</span>
+            </div>
+            <div class="yes-box">
+              <span>YES</span>
+              <input type="checkbox" name="Will post in Discord" value="Yes" required />
+            </div>
+          </label>
 
-        <label class="check">
-          <input type="checkbox" name="Photo Permission" value="Yes" />
-          <span>Do you allow BloomVault to use your grow photos with credit/tag?</span>
-        </label>
+          <label class="check-card">
+            <div>
+              <strong>Photo Permission</strong>
+              <span>Do you allow BloomVault to use your grow photos with credit/tag?</span>
+            </div>
+            <div class="yes-box">
+              <span>YES</span>
+              <input type="checkbox" name="Photo Permission" value="Yes" />
+            </div>
+          </label>
 
-        <label class="check">
-          <input type="checkbox" name="Tester Agreement" value="Agreed" required />
-          <span>I understand this is a tester trial and agree to provide honest documentation.</span>
-        </label>
+          <label class="check-card">
+            <div>
+              <strong>Tester Agreement</strong>
+              <span>I understand this is a tester trial and agree to provide honest documentation.</span>
+            </div>
+            <div class="yes-box">
+              <span>YES</span>
+              <input type="checkbox" name="Tester Agreement" value="Agreed" required />
+            </div>
+          </label>
+        </div>
       </fieldset>
 
       <label>
@@ -127,6 +163,12 @@
       </label>
 
       <button type="submit">Submit Application</button>
+
+      <div class="success-message" id="successMessage">
+        <div class="success-icon">✓</div>
+        <h2>Application Submitted</h2>
+        <p>Thank you for applying to the BloomVault Tester Trials.</p>
+      </div>
 
       <p class="fine-print">Applications are reviewed manually. Submission does not guarantee selection. Please follow all local laws and regulations.</p>
     </form>
