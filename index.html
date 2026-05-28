@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BloomVault Farms Tester Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero card">
+      <img class="logo" src="assets/logo.svg" alt="BloomVault Farms logo" />
+      <p class="eyebrow">BloomVault Tester Trials</p>
+      <h1>Tester Application</h1>
+      <p class="intro">Apply to be considered for future BloomVault tester trials. Selected testers will document unreleased genetics, stay active in the BloomVault community, and help shape future releases.</p>
+    </section>
+
+    <form class="application card" action="https://formsubmit.co/bloomvaultfarms@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New BloomVault Tester Application" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="true" />
+
+      <div class="field-grid">
+        <label>
+          Name / Alias
+          <input type="text" name="Name / Alias" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="Email" required />
+        </label>
+
+        <label>
+          Instagram Handle
+          <input type="text" name="Instagram Handle" placeholder="@username" />
+        </label>
+
+        <label>
+          Discord Username
+          <input type="text" name="Discord Username" required />
+        </label>
+
+        <label>
+          State / Region
+          <select name="State / Region" required>
+            <option value="">Select one</option>
+            <option>Virginia</option>
+            <option>North Carolina</option>
+            <option>South Carolina</option>
+            <option>Tennessee</option>
+            <option>Kentucky</option>
+            <option>West Virginia</option>
+            <option>Maryland</option>
+            <option>Other U.S. State</option>
+            <option>Outside the U.S.</option>
+          </select>
+        </label>
+
+        <label>
+          Grow Style
+          <select name="Grow Style" required>
+            <option value="">Select one</option>
+            <option>Indoor</option>
+            <option>Outdoor</option>
+            <option>Greenhouse</option>
+            <option>Mixed / Multiple</option>
+          </select>
+        </label>
+
+        <label>
+          Experience Level
+          <select name="Experience Level" required>
+            <option value="">Select one</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+            <option>Breeder / Pheno Hunter</option>
+          </select>
+        </label>
+
+        <label>
+          Preferred Medium
+          <select name="Preferred Medium" required>
+            <option value="">Select one</option>
+            <option>Soil</option>
+            <option>Living Soil</option>
+            <option>Coco</option>
+            <option>Hydro</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </div>
+
+      <fieldset>
+        <legend>Tester Commitment</legend>
+
+        <label class="check">
+          <input type="checkbox" name="21+ Confirmation" value="Confirmed 21+" required />
+          <span>I confirm that I am 21 years of age or older.</span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" name="Will document weekly" value="Yes" required />
+          <span>Will you document your grow with weekly updates?</span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" name="Will post in Discord" value="Yes" required />
+          <span>Will you post updates inside the BloomVault Discord?</span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" name="Photo Permission" value="Yes" />
+          <span>Do you allow BloomVault to use your grow photos with credit/tag?</span>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" name="Tester Agreement" value="Agreed" required />
+          <span>I understand this is a tester trial and agree to provide honest documentation.</span>
+        </label>
+      </fieldset>
+
+      <label>
+        Anything else we should know?
+        <textarea name="Additional Notes" rows="5" placeholder="Optional"></textarea>
+      </label>
+
+      <button type="submit">Submit Application</button>
+
+      <p class="fine-print">Applications are reviewed manually. Submission does not guarantee selection. Please follow all local laws and regulations.</p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
